@@ -1,2 +1,0 @@
-# vuejs-norte.github.io
-
