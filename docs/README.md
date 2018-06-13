@@ -7,6 +7,9 @@ meta:
     content: vue js norte home
 ---
 
-# Vue.js Norte
-
-Comunidade de desenvolvedores Vue.js do Norte do Brasil.
+<p align="center">
+  <img src="https://raw.githubusercontent.com/vuejs-norte/artworks/master/logo-256x256.png" />
+</p>
+<p align="center">
+  Comunidade de desenvolvedores Vue.js do Norte do Brasil.
+</p>
