@@ -19,6 +19,9 @@ export default {
     .then(response => {
       this.members = response.data
     })
+    .catch(err => {
+      console.error(err);
+    })
   },
   data() {
     return {

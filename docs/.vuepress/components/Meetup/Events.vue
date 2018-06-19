@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-for="(event, index) in events.reverse()" key="index">
+    <div v-for="(event, index) in events" key="index">
       <a :href="event.link" target="_blank">
         <h3>{{event.name}}</h3>
       </a>
@@ -33,7 +33,10 @@ export default {
   mounted() {
     axios.get('https://vuejs-back-api.herokuapp.com/meetup/events')
     .then(response => {
-      this.events = response.data
+      this.events = response.data.reverse()
+    })
+    .catch(err => {
+      console.error(err)
     })
   },
   data() {

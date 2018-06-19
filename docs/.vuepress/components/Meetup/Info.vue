@@ -14,6 +14,9 @@ export default {
     .then(response => {
       this.info = response.data
     })
+    .catch(err => {
+      console.error(err);
+    })
   },
   data() {
     return {
