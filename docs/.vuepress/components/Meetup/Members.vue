@@ -1,7 +1,7 @@
 <template>
   <div>
-    <ul id="example-1">
-      <li v-for="member in members" class="member-li">
+    <ul>
+      <li v-for="(member, index) in members" class="member-li" :key="index">
         <a :href="member.group_profile.link" target="_blank">
           <img :src="member.photo.thumb_link" :title="member.name" class="member-img"/>
         </a>

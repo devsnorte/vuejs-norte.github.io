@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'vuejs-norte-github-io',
-  description: 'Awesome description',
+  title: 'Vue.js Norte',
+  description: 'Comunidade de desenvolvedores Vue.js do Norte do Brasil',
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
