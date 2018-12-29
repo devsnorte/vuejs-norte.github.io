@@ -3,7 +3,7 @@ module.exports = {
   description: 'Comunidade de desenvolvedores Vue.js do Norte do Brasil',
   themeConfig: {
     nav: [
-      { text: 'In[icio', link: '/' },
+      { text: 'Início', link: '/' },
       { text: 'Comunidade', link: '/comunidade/' },
       { text: 'Links', link: '/links/' }
     ],
