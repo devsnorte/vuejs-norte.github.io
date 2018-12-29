@@ -3,14 +3,14 @@ module.exports = {
   description: 'Comunidade de desenvolvedores Vue.js do Norte do Brasil',
   themeConfig: {
     nav: [
-      { text: 'Home', link: '/' },
+      { text: 'In[icio', link: '/' },
       { text: 'Comunidade', link: '/comunidade/' },
-      { text: 'Meetup', link: '/meetup/' }
+      { text: 'Links', link: '/links/' }
     ],
     sidebar: [
-      ['/', 'Home'],
+      ['/', 'Início'],
       ['/comunidade/', 'Comunidade'],
-      ['/meetup/', 'Meetup']
+      ['/links/', 'Links']
     ]
   }
 }
