@@ -27,4 +27,4 @@ deploy:
   kepp-history: true
   target-branch: master
   on:
-    branch: master
+    branch: dev
