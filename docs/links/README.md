@@ -13,6 +13,7 @@ Materiais de Apoio para Desenvolvedores.
 | [Vila do Silício](http://viladosilicio.com.br) | Blog com artigos em Português   |
 | [Vue.js Brasil](https://vuejs-brasil.com.br) | Artigos em Português sobre Vue.js  |
 | [Vue.js Developers](https://vuejsdevelopers.com) | Artigos em Inglês sobre Vue.js |
+| [Guia de estudos Javascript](https://gist.github.com/vinicius73/60027329a3855345e15b2eeaa3fd588d) | Guia de estudos com lista selecionada  de artigos e vídeos sobre Javascript |
 
 ## :mortar_board: Cursos
 
