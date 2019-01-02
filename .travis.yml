@@ -25,6 +25,6 @@ deploy:
   github-token: $GITHUB_TOKEN
   repo: vuejs-norte
   kepp-history: true
-  target-branch: dev
+  target-branch: master
   on:
-    branch: dev
+    branch: master
