@@ -23,7 +23,7 @@ deploy:
   skip-cleanup: true
   local_dir: docs/.vuepress/dist
   github-token: $GITHUB_TOKEN
-  repo: https://github.com/vuejs-norte/vuejs-norte.github.io
+  repo: vuejs-norte/vuejs-norte.github.io
   kepp-history: true
   target-branch: master
   on:
