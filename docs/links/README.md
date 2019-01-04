@@ -51,3 +51,4 @@ Materiais de Apoio para Desenvolvedores.
 | [Curso Quasar Framework - Patrick Monteiro](https://www.youtube.com/playlist?list=PLBjvYfV_TvwJlOctQ49KiOrxrFwJGqAdr) | Curso de Introdução ao framework Quasar |
 | [Vuex - Fábio Vedovelli](https://www.youtube.com/watch?v=Fn6pB3sYhn4&list=PLFJmwzuHdBRTN93itG0UiZpqs8ZnBSeEF) |PlayList sobre Vuex |
 | [Vue.js + Vuetify + Firebase Project - DevMeetup](https://www.youtube.com/watch?v=FXY1UyQfSFw&list=PL55RiY5tL51qxUbODJG9cgrsVd7ZHbPrt) |Playlist do Maximilian Schwarzmüller |
+| [TDD com Javascript](https://www.youtube.com/watch?v=6pYUzEduLyU) | Playlist com vídeo aulas sobre TDD |
