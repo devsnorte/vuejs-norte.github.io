@@ -38,6 +38,7 @@ Materiais de Apoio para Desenvolvedores.
 |GDG Belém    | [Facebook](https://www.facebook.com/GDGBelem/), [Twitter](https://twitter.com/gdgbelem), [Meetup](https://www.meetup.com/pt-BR/gdgbelemio/), [Site](https://gdgbelem.github.io/home/)|
 | Java Belém  | [WhatsApp](https://chat.whatsapp.com/KTfRmaqPRqJ4Oyn5jENfnn)|
 | Tá Safo!    | [Blog](https://tasafo.org/), [Facebook](https://www.facebook.com/tasafo.comunidade/), [Twitter](https://twitter.com/tasafo) 
+| ParaLivre   | [Site](https://www.paralivre.org), [Telegram](https://t.me/paralivre), [Twitter](https://twitter.com/paralivre_)|
 | PyD'égua | [Site](http://pydegua.python.org.br), [Github](https://github.com/pydegua/site)|
 |PyLadies Belém| [facebook](https://www.facebook.com/pyladiesbelem/)|
 | SQL Norte   | [Facebook](https://www.facebook.com/sqlnorte/)|
