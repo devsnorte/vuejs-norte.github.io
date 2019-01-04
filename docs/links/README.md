@@ -53,3 +53,4 @@ Materiais de Apoio para Desenvolvedores.
 | [Vue.js + Vuetify + Firebase Project - DevMeetup](https://www.youtube.com/watch?v=FXY1UyQfSFw&list=PL55RiY5tL51qxUbODJG9cgrsVd7ZHbPrt) |Playlist do Maximilian Schwarzmüller |
 | [The Vue Tutorial for 2018 - Learn Vue 2 in 65 Minutes](https://www.youtube.com/watch?v=78tNYZUS-ps) |DesignCourse |
 | [Vue JS 2 Tutorial ](https://www.youtube.com/watch?v=5LYrN_cAJoA&list=PL4cUxeGkcC9gQcYgjhBoeQH7wiAyZNrYa) | Playlist The Net Ninja com 44 aulas |
+| [TDD com Javascript](https://www.youtube.com/watch?v=6pYUzEduLyU) | Playlist com vídeo aulas sobre TDD |
