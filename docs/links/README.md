@@ -52,6 +52,7 @@ Materiais de Apoio para Desenvolvedores.
 | [Curso Quasar Framework - Patrick Monteiro](https://www.youtube.com/playlist?list=PLBjvYfV_TvwJlOctQ49KiOrxrFwJGqAdr) | Curso de Introdução ao framework Quasar |
 | [Vuex - Fábio Vedovelli](https://www.youtube.com/watch?v=Fn6pB3sYhn4&list=PLFJmwzuHdBRTN93itG0UiZpqs8ZnBSeEF) |PlayList sobre Vuex |
 | [Vue.js + Vuetify + Firebase Project - DevMeetup](https://www.youtube.com/watch?v=FXY1UyQfSFw&list=PL55RiY5tL51qxUbODJG9cgrsVd7ZHbPrt) |Playlist do Maximilian Schwarzmüller |
+| [Curso Javascript Ninja](https://www.udemy.com/curso-javascript-ninja/) |Curso do Fernando Daciuk |
 | [The Vue Tutorial for 2018 - Learn Vue 2 in 65 Minutes](https://www.youtube.com/watch?v=78tNYZUS-ps) |DesignCourse |
 | [Vue JS 2 Tutorial ](https://www.youtube.com/watch?v=5LYrN_cAJoA&list=PL4cUxeGkcC9gQcYgjhBoeQH7wiAyZNrYa) | Playlist The Net Ninja com 44 aulas |
 | [TDD com Javascript](https://www.youtube.com/watch?v=6pYUzEduLyU) | Playlist com vídeo aulas sobre TDD |
