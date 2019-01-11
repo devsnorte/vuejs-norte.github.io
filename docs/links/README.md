@@ -22,7 +22,8 @@ Materiais de Apoio para Desenvolvedores.
 | [Alura - Vue.js](https://www.alura.com.br/curso-online-vue-parte1) | Curso de Vue na Alura  |
 | [Devmedia - Vue.js: Como criar sua primeira aplicação](https://www.devmedia.com.br/curso/curso-de-vue-js-como-criar-sua-primeira-aplicacao/2071) | Curso de Vue.js no Devmedia  |
 | [School of Net - Iniciando com Vue.js 2](https://www.schoolofnet.com/curso/frontend/vuejs/iniciando-com-vuejs-2-rev3/) | Curso Free de Vue.js |
-| [Udemy- Vue JS 2 - The Complete Guide (incl. Vue Router & Vuex)](https://www.udemy.com/vuejs-2-the-complete-guide/) | Curso completo de Vue.js na Udemy |
+| [Udemy - Curso Javascript Ninja](https://www.udemy.com/curso-javascript-ninja/) |Curso do Fernando Daciuk |
+| [Udemy - Vue JS 2 - The Complete Guide (incl. Vue Router & Vuex)](https://www.udemy.com/vuejs-2-the-complete-guide/) | Curso completo de Vue.js na Udemy |
 | [Vue Mastery](https://www.vuemastery.com/courses) | Cursos da introdução ao avançado(Introdução é free)   |
 
 
@@ -52,7 +53,6 @@ Materiais de Apoio para Desenvolvedores.
 | [Curso Quasar Framework - Patrick Monteiro](https://www.youtube.com/playlist?list=PLBjvYfV_TvwJlOctQ49KiOrxrFwJGqAdr) | Curso de Introdução ao framework Quasar |
 | [Vuex - Fábio Vedovelli](https://www.youtube.com/watch?v=Fn6pB3sYhn4&list=PLFJmwzuHdBRTN93itG0UiZpqs8ZnBSeEF) |PlayList sobre Vuex |
 | [Vue.js + Vuetify + Firebase Project - DevMeetup](https://www.youtube.com/watch?v=FXY1UyQfSFw&list=PL55RiY5tL51qxUbODJG9cgrsVd7ZHbPrt) |Playlist do Maximilian Schwarzmüller |
-| [Curso Javascript Ninja](https://www.udemy.com/curso-javascript-ninja/) |Curso do Fernando Daciuk |
 | [The Vue Tutorial for 2018 - Learn Vue 2 in 65 Minutes](https://www.youtube.com/watch?v=78tNYZUS-ps) |DesignCourse |
 | [Vue JS 2 Tutorial ](https://www.youtube.com/watch?v=5LYrN_cAJoA&list=PL4cUxeGkcC9gQcYgjhBoeQH7wiAyZNrYa) | Playlist The Net Ninja com 44 aulas |
 | [TDD com Javascript](https://www.youtube.com/watch?v=6pYUzEduLyU) | Playlist com vídeo aulas sobre TDD |
