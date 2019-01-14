@@ -10,6 +10,7 @@ Materiais de Apoio para Desenvolvedores.
 
 | Link        | Assunto           |
 | ------------- |-------------|
+| [Arquitetura de projetos Vue.js com DDD](https://blog.codecasts.com.br/arquitetura-de-projetos-vue-js-com-ddd-a2bc26817793) | Facilitando a manutenção, reuso e escala de projetos Vue.js com Domain Driven Design.   |
 | [Vila do Silício](http://viladosilicio.com.br) | Blog com artigos em Português   |
 | [Vue.js Brasil](https://vuejs-brasil.com.br) | Artigos em Português sobre Vue.js  |
 | [Vue.js Developers](https://vuejsdevelopers.com) | Artigos em Inglês sobre Vue.js |
