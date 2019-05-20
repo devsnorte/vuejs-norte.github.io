@@ -1,10 +1,11 @@
 # Links
 
 Materiais de Apoio para Desenvolvedores.
-* [Blogs e Artigos  ](/links/#blogs-e-artigos)
-* [Cursos  ](/links/#cursos)
-* [Comunidades Locais  ](/links/#comunidades-locais)
-* [Vídeos Youtube ](/links/#videos-youtube)
+
+* [Blogs e Artigos](/links/#blogs-e-artigos)
+* [Cursos](/links/#cursos)
+* [Comunidades Locais](/links/#comunidades-locais)
+* [Vídeos Youtube](/links/#videos-youtube)
 
 ## :page_with_curl: Blogs e Artigos  
 
@@ -27,8 +28,7 @@ Materiais de Apoio para Desenvolvedores.
 | [Udemy - Vue JS 2 - The Complete Guide (incl. Vue Router & Vuex)](https://www.udemy.com/vuejs-2-the-complete-guide/) | Curso completo de Vue.js na Udemy |
 | [Vue Mastery](https://www.vuemastery.com/courses) | Cursos da introdução ao avançado(Introdução é free)   |
 
-
-## :city_sunrise: Comunidades Locais 
+## :city_sunrise: Comunidades Locais
 
 | Comunidade    | Links           |
 | ------------- |-------------    |
@@ -55,5 +55,6 @@ Materiais de Apoio para Desenvolvedores.
 | [Vuex - Fábio Vedovelli](https://www.youtube.com/watch?v=Fn6pB3sYhn4&list=PLFJmwzuHdBRTN93itG0UiZpqs8ZnBSeEF) |PlayList sobre Vuex |
 | [Vue.js + Vuetify + Firebase Project - DevMeetup](https://www.youtube.com/watch?v=FXY1UyQfSFw&list=PL55RiY5tL51qxUbODJG9cgrsVd7ZHbPrt) |Playlist do Maximilian Schwarzmüller |
 | [The Vue Tutorial for 2018 - Learn Vue 2 in 65 Minutes](https://www.youtube.com/watch?v=78tNYZUS-ps) |DesignCourse |
-| [Vue JS 2 Tutorial ](https://www.youtube.com/watch?v=5LYrN_cAJoA&list=PL4cUxeGkcC9gQcYgjhBoeQH7wiAyZNrYa) | Playlist The Net Ninja com 44 aulas |
+| [VuePress Tutorial - Learn how to use VuePress for Documentation Site (Beginner)](https://www.youtube.com/watch?v=5Kqyhu_eIcw) | DesignCourse |
+| [Vue JS 2 Tutorial](https://www.youtube.com/watch?v=5LYrN_cAJoA&list=PL4cUxeGkcC9gQcYgjhBoeQH7wiAyZNrYa) | Playlist The Net Ninja com 44 aulas |
 | [TDD com Javascript](https://www.youtube.com/watch?v=6pYUzEduLyU) | Playlist com vídeo aulas sobre TDD |

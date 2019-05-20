@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # Comunidade
 
 Nossa comunidade surgiu junto com a popularização do Vue.js.
