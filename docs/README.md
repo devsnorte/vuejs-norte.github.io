@@ -1,16 +1,15 @@
 ---
-title: Início
+home: true
+heroImage: https://raw.githubusercontent.com/vuejs-norte/artworks/master/png/logo-256x256.png
+
 meta:
-  - name: description
-    content: HomePage
-  - name: keywords
-    content: vue js norte home
+    - name: tile
+      content: teste1
+    - name: title
+      content: teste01
+    - name: keywords
+      content: vue js norte home
+actionText: Comunidade →
+actionLink: /comunidade/
+footer:  Copyright © 2019 Vue.js Norte.
 ---
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/vuejs-norte/artworks/master/png/logo-256x256.png" />
-</p>
-
-<h2 align="center" style="border-bottom:none !important">
-  Comunidade de desenvolvedores Vue.js do Norte do Brasil
-</h2>
