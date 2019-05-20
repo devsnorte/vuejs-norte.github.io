@@ -16,7 +16,7 @@ module.exports = {
     // Assumes GitHub. Can also be a full GitLab url.
     repo: 'vuejs-norte/vuejs-norte.github.io',
     // Customising the header label
-    repoLabel: 'Repo Git!',
+    repoLabel: 'Github',
 
     // Optional options for generating "Edit this page" link
 
