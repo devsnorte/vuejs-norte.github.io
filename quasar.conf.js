@@ -6,8 +6,7 @@ module.exports = function (ctx) {
     // app boot file (/src/boot)
     // --> boot files are part of "main.js"
     boot: [
-      'i18n',
-      'axios'
+      'i18n'
     ],
 
     css: [
@@ -72,7 +71,10 @@ module.exports = function (ctx) {
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
-          exclude: /node_modules/
+          exclude: /node_modules/,
+          options: {
+            formatter: require('eslint').CLIEngine.getFormatter('stylish')
+          }
         })
       }
     },
@@ -94,9 +96,9 @@ module.exports = function (ctx) {
       // workboxPluginMode: 'InjectManifest',
       // workboxOptions: {}, // only for NON InjectManifest
       manifest: {
-        // name: 'Vue.js Norte',
-        // short_name: 'Vue.js Norte',
-        // description: 'Vue.js Norte Official Website',
+        // name: 'VueJS Norte',
+        // short_name: 'VueJS Norte',
+        // description: 'Página oficial do grupo',
         display: 'standalone',
         orientation: 'portrait',
         background_color: '#ffffff',
@@ -132,7 +134,7 @@ module.exports = function (ctx) {
     },
 
     cordova: {
-      // id: 'org.vuejsnorte.app',
+      // id: 'org.cordova.quasar.app',
       // noIosLegacyBuildFlag: true, // uncomment only if you know what you are doing
     },
 
@@ -160,7 +162,7 @@ module.exports = function (ctx) {
       builder: {
         // https://www.electron.build/configuration/configuration
 
-        // appId: 'vuejsnorte'
+        // appId: 'vuejs-norte.github.io'
       }
     }
   }
