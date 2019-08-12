@@ -7,7 +7,7 @@
     <h2 class="title text-h2">
       📃 Blogs e Artigos
     </h2>
-    <q-markup-table class="table" separator="none" flat bordered>
+    <q-markup-table class="table" wrap-cells flat bordered>
       <thead>
         <tr>
         <th>Link</th>
@@ -60,7 +60,7 @@
     <h2 class="title text-h2">
       🎓 Cursos
     </h2>
-    <q-markup-table class="table" flat bordered>
+    <q-markup-table class="table" wrap-cells flat bordered>
       <thead>
         <tr>
           <th>Link</th>
@@ -121,7 +121,7 @@
     <h2 class="title text-h2">
       🌇 Comunidades Locais
     </h2>
-    <q-markup-table class="table" flat bordered>
+    <q-markup-table class="table" wrap-cells flat bordered>
       <thead>
         <tr>
           <th>Comunidade</th>
@@ -210,7 +210,7 @@
     <h2 class="title text-h2">
       🎥 Vídeos Youtube
     </h2>
-    <q-markup-table class="table" flat bordered>
+    <q-markup-table class="table" wrap-cells flat bordered>
       <thead>
         <tr>
           <th>Link</th>
@@ -263,9 +263,7 @@ import { QMarkupTable } from 'quasar'
 
 export default {
   name: 'PageLinks',
-  components: { QMarkupTable },
-  data: () => ({
-  })
+  components: { QMarkupTable }
 }
 </script>
 
@@ -275,5 +273,8 @@ export default {
 }
 td {
   word-wrap: break-word;
+}
+h2.title {
+  font-size: 2em;
 }
 </style>
