@@ -12,12 +12,15 @@
         >
           <q-icon name="menu" />
         </q-btn>
-
+        <q-btn round dense flat>
+          <q-img src="/assets/logo-256x256.png" ratio="1" width="16"/>
+        </q-btn>
         <q-toolbar-title class="gt-sm text-weight-bold">
           Vue.js Norte
         </q-toolbar-title>
 
         <q-space />
+
         <div class="gt-sm">
           <template v-for="(menu, key) in menus">
             <q-btn flat dense v-if="menu.route" :key="key" :to="menu.route" class="q-mr-md" size="lg">
@@ -65,11 +68,11 @@
 </template>
 
 <script>
-import { QSpace, openURL } from 'quasar'
+import { QImg, QSpace, openURL } from 'quasar'
 
 export default {
   name: 'MyLayout',
-  components: { QSpace },
+  components: { QImg, QSpace },
   data () {
     return {
       leftDrawerOpen: !this.$q.platform.is.desktop,
