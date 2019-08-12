@@ -1,7 +1,7 @@
 <template>
   <q-layout view="hHh LpR fFf">
-    <q-header reveal elevated>
-      <q-toolbar >
+    <q-header reveal>
+      <q-toolbar>
         <q-btn
           class="lt-md"
           flat
@@ -13,7 +13,7 @@
           <q-icon name="menu" />
         </q-btn>
         <q-avatar v-if="!isIndex">
-          <q-img src="/assets/logo-256x256.png" ratio="1" width="32"/>
+          <q-img src="./statics/logo-256x256.png" ratio="1"/>
         </q-avatar>
         <q-toolbar-title v-if="!isIndex" class="gt-sm text-weight-bold">
           Vue.js Norte
@@ -75,7 +75,7 @@ export default {
   components: { QAvatar, QImg, QSpace },
   computed: {
     isIndex () {
-      return this.$route.fullPath === '/'
+      return this.$route.fullPath === '/main'
     }
   },
   data () {

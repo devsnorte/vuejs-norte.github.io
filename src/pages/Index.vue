@@ -1,6 +1,6 @@
 <template>
   <q-page class="flex flex-center column">
-    <q-img class="logo" alt="Quasar logo" src="assets/logo-256x256.png" ratio="1"/>
+    <q-img class="logo" alt="Quasar logo" src="./statics/logo-256x256.png" ratio="1"/>
     <h1 class="text-h1 title text-center">
       Vue.js Norte
     </h1>
