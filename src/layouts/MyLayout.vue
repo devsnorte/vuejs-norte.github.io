@@ -12,10 +12,10 @@
         >
           <q-icon name="menu" />
         </q-btn>
-        <q-btn round dense flat>
-          <q-img src="/assets/logo-256x256.png" ratio="1" width="16"/>
-        </q-btn>
-        <q-toolbar-title class="gt-sm text-weight-bold">
+        <q-avatar v-if="!isIndex">
+          <q-img src="/assets/logo-256x256.png" ratio="1" width="32"/>
+        </q-avatar>
+        <q-toolbar-title v-if="!isIndex" class="gt-sm text-weight-bold">
           Vue.js Norte
         </q-toolbar-title>
 
@@ -68,14 +68,19 @@
 </template>
 
 <script>
-import { QImg, QSpace, openURL } from 'quasar'
+import { openURL, QAvatar, QImg, QSpace } from 'quasar'
 
 export default {
   name: 'MyLayout',
-  components: { QImg, QSpace },
+  components: { QAvatar, QImg, QSpace },
+  computed: {
+    isIndex () {
+      return this.$route.fullPath === '/'
+    }
+  },
   data () {
     return {
-      leftDrawerOpen: !this.$q.platform.is.desktop,
+      leftDrawerOpen: false,
       menus: [
         { label: 'Início', route: '/' },
         { label: 'Comunidade', route: '/comunidade' },
