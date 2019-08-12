@@ -1,8 +1,9 @@
 <template>
-  <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
-      <q-toolbar>
+  <q-layout view="hHh LpR fFf">
+    <q-header reveal elevated>
+      <q-toolbar >
         <q-btn
+          class="lt-md"
           flat
           dense
           round
@@ -12,75 +13,48 @@
           <q-icon name="menu" />
         </q-btn>
 
-        <q-toolbar-title>
-          Quasar App
+        <q-toolbar-title class="gt-sm text-weight-bold">
+          Vue.js Norte
         </q-toolbar-title>
 
-        <div>Quasar v{{ $q.version }}</div>
+        <q-space />
+        <div class="gt-sm">
+          <template v-for="(menu, key) in menus">
+            <q-btn flat dense v-if="menu.route" :key="key" :to="menu.route" class="q-mr-md" size="lg">
+              {{menu.label}}
+            </q-btn>
+            <q-btn flat dense v-if="menu.url" :key="key" @click="openURL(menu.url)" class="q-mr-md" size="lg">
+              {{menu.label}}
+              <q-icon name="launch" size="0.8em"/>
+            </q-btn>
+          </template>
+        </div>
       </q-toolbar>
     </q-header>
 
     <q-drawer
       v-model="leftDrawerOpen"
-      bordered
-      content-class="bg-grey-2"
+      overlay
+      elevated
+      side="left"
+      behavior="mobile"
+      content-class="bg-grey-2 lt-sm"
     >
       <q-list>
-        <q-item-label header>Essential Links</q-item-label>
-        <q-item clickable tag="a" target="_blank" href="https://quasar.dev">
-          <q-item-section avatar>
-            <q-icon name="school" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Docs</q-item-label>
-            <q-item-label caption>quasar.dev</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-item clickable tag="a" target="_blank" href="https://github.quasar.dev">
-          <q-item-section avatar>
-            <q-icon name="code" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Github</q-item-label>
-            <q-item-label caption>github.com/quasarframework</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-item clickable tag="a" target="_blank" href="https://chat.quasar.dev">
-          <q-item-section avatar>
-            <q-icon name="chat" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Discord Chat Channel</q-item-label>
-            <q-item-label caption>chat.quasar.dev</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-item clickable tag="a" target="_blank" href="https://forum.quasar.dev">
-          <q-item-section avatar>
-            <q-icon name="record_voice_over" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Forum</q-item-label>
-            <q-item-label caption>forum.quasar.dev</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-item clickable tag="a" target="_blank" href="https://twitter.quasar.dev">
-          <q-item-section avatar>
-            <q-icon name="rss_feed" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Twitter</q-item-label>
-            <q-item-label caption>@quasarframework</q-item-label>
-          </q-item-section>
-        </q-item>
-        <q-item clickable tag="a" target="_blank" href="https://facebook.quasar.dev">
-          <q-item-section avatar>
-            <q-icon name="public" />
-          </q-item-section>
-          <q-item-section>
-            <q-item-label>Facebook</q-item-label>
-            <q-item-label caption>@QuasarFramework</q-item-label>
-          </q-item-section>
-        </q-item>
+        <template v-for="(menu, key) in menus">
+          <q-item v-if="menu.url" :key="key" clickable tag="a" target="_blank" :href="menu.url">
+            <q-item-section>
+              <q-item-label>
+                <span class="text-h6">{{ menu.label }}</span><q-icon name="launch" /></q-item-label>
+            </q-item-section>
+          </q-item>
+          <q-item v-if="menu.route" :key="key" clickable tag="a" :to="menu.route">
+            <q-item-section>
+              <q-item-label>
+                <span class="text-h6">{{ menu.label }}</span></q-item-label>
+            </q-item-section>
+          </q-item>
+        </template>
       </q-list>
     </q-drawer>
 
@@ -91,13 +65,20 @@
 </template>
 
 <script>
-import { openURL } from 'quasar'
+import { QSpace, openURL } from 'quasar'
 
 export default {
   name: 'MyLayout',
+  components: { QSpace },
   data () {
     return {
-      leftDrawerOpen: this.$q.platform.is.desktop
+      leftDrawerOpen: !this.$q.platform.is.desktop,
+      menus: [
+        { label: 'Início', route: '/' },
+        { label: 'Comunidade', route: '/comunidade' },
+        { label: 'Links', route: '/links' },
+        { label: 'Github', url: 'https://github.com/vuejs-norte/vuejs-norte.github.io' }
+      ]
     }
   },
   methods: {
