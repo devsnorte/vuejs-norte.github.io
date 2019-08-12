@@ -75,14 +75,14 @@ export default {
   components: { QAvatar, QImg, QSpace },
   computed: {
     isIndex () {
-      return this.$route.fullPath === '/main'
+      return this.$route.fullPath === '/inicio'
     }
   },
   data () {
     return {
       leftDrawerOpen: false,
       menus: [
-        { label: 'Início', route: '/' },
+        { label: 'Início', route: '/inicio' },
         { label: 'Comunidade', route: '/comunidade' },
         { label: 'Links', route: '/links' },
         { label: 'Github', url: 'https://github.com/vuejs-norte/vuejs-norte.github.io' }
