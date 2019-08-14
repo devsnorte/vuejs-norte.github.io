@@ -32,7 +32,7 @@ Materiais de Apoio para Desenvolvedores.
 
 | Comunidade    | Links           |
 | ------------- |-------------    |
-| Acai Valley| [Twitter](https://twitter.com/acaivalley)|
+| Acai Valley| [Twitter](https://twitter.com/acaivalley), [Instagram](https://www.instagram.com/acaivalley/), [Facebook](https://www.facebook.com/acaivalley/) |
 | Beljogos | [Facebook](https://www.facebook.com/BeljogosPA/), [Twitter](https://twitter.com/beljogos), [Youtube](https://www.youtube.com/channel/UCa0FvmBQz0JiActsGs5r5-A)|
 | Django Girls Belém| [Facebook](https://www.facebook.com/DjangoGirlsBelem/), [Site](https://djangogirls.org/belem)|
 | Enactus UFPA| [Facebook](https://www.facebook.com/EnactusUFPA/) |
