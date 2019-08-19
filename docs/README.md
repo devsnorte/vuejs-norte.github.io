@@ -4,11 +4,11 @@ heroImage: https://raw.githubusercontent.com/vuejs-norte/artworks/master/png/log
 
 meta:
     - name: tile
-      content: teste1
+      content: Site Oficial Comunidade Vue.js Norte
     - name: title
-      content: teste01
+      content: Site Oficial Comunidade Vue.js Norte
     - name: keywords
-      content: vue js norte home
+      content: vue.js norte home
 actionText: Comunidade →
 actionLink: /comunidade/
 footer:  Copyright © 2019 Vue.js Norte.
