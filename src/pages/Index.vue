@@ -7,9 +7,17 @@
     <p class="text-h6 subtitle text-center">
       Comunidade de desenvolvedores Vue.js do Norte do Brasil
     </p>
-    <q-btn color="primary" class="q-mt-lg" to="/comunidade" icon-right="arrow_right_alt" size="xl">
+    <q-btn
+      no-caps
+      color="primary"
+      class="q-mt-lg"
+      to="/comunidade"
+      icon-right="arrow_right_alt"
+      size="xl"
+    >
       Comunidade
     </q-btn>
+    <app-chat />
   </q-page>
 </template>
 
@@ -22,8 +30,9 @@
 
 <script>
 import { QBtn, QImg } from 'quasar'
+import AppChat from 'components/chat'
 export default {
   name: 'PageIndex',
-  components: { QBtn, QImg }
+  components: { AppChat, QBtn, QImg }
 }
 </script>

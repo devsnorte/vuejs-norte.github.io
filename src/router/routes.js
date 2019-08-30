@@ -2,7 +2,7 @@
 const routes = [
   {
     path: '/',
-    component: () => import('layouts/MyLayout.vue'),
+    component: () => import('layouts/BaseLayout.vue'),
     children: [
       { path: '/', redirect: '/inicio' },
       { path: 'inicio', component: () => import('pages/Index.vue') },

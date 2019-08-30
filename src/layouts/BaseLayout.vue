@@ -1,17 +1,7 @@
 <template>
   <q-layout view="hHh LpR fFf">
-    <q-header reveal>
+    <q-header reveal :reveal-offset="20">
       <q-toolbar>
-        <q-btn
-          class="lt-md"
-          flat
-          dense
-          round
-          @click="leftDrawerOpen = !leftDrawerOpen"
-          aria-label="Menu"
-        >
-          <q-icon name="menu" />
-        </q-btn>
         <q-avatar v-if="!isIndex">
           <q-img src="./statics/logo-256x256.png" ratio="1"/>
         </q-avatar>
@@ -21,12 +11,39 @@
 
         <q-space />
 
+        <q-btn
+          class="lt-md"
+          flat
+          dense
+          round
+          @click="drawerOpen = !drawerOpen"
+          aria-label="Menu"
+        >
+          <q-icon name="menu" />
+        </q-btn>
+
         <div class="gt-sm">
           <template v-for="(menu, key) in menus">
-            <q-btn flat dense v-if="menu.route" :key="key" :to="menu.route" class="q-mr-md" size="lg">
+            <q-btn
+              flat
+              dense
+              v-if="menu.route"
+              :key="key"
+              :to="menu.route"
+              class="q-mr-md"
+              size="lg"
+              no-caps>
               {{menu.label}}
             </q-btn>
-            <q-btn flat dense v-if="menu.url" :key="key" @click="openURL(menu.url)" class="q-mr-md" size="lg">
+            <q-btn
+              flat
+              dense
+              v-if="menu.url"
+              :key="key"
+              @click="openURL(menu.url)"
+              class="q-mr-md"
+              size="lg"
+              no-caps>
               {{menu.label}}
               <q-icon name="launch" size="0.8em"/>
             </q-btn>
@@ -36,10 +53,10 @@
     </q-header>
 
     <q-drawer
-      v-model="leftDrawerOpen"
+      v-model="drawerOpen"
       overlay
       elevated
-      side="left"
+      side="right"
       behavior="mobile"
       content-class="bg-grey-2 lt-sm"
     >
@@ -80,7 +97,7 @@ export default {
   },
   data () {
     return {
-      leftDrawerOpen: false,
+      drawerOpen: false,
       menus: [
         { label: 'Início', route: '/inicio' },
         { label: 'Comunidade', route: '/comunidade' },
