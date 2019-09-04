@@ -16,7 +16,7 @@
           flat
           dense
           round
-          @click="drawerOpen = !drawerOpen"
+          @click="toggleDrawer"
           aria-label="Menu"
         >
           <q-icon name="menu" />
@@ -107,7 +107,10 @@ export default {
     }
   },
   methods: {
-    openURL
+    openURL,
+    toggleDrawer () {
+      this.drawerOpen = !this.drawerOpen
+    }
   }
 }
 </script>
