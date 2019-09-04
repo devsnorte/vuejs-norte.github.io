@@ -15,7 +15,7 @@
             <q-item v-if="'url' in menu" :key="key" clickable tag="a" target="_blank" :href="menu.url">
               <q-item-section>
                 <q-item-label>
-                  <span>{{ menu.label }}</span>
+                  <span>{{ menu.label }}&nbsp;</span>
                   <q-icon name="launch" /></q-item-label>
               </q-item-section>
             </q-item>
@@ -45,7 +45,12 @@
 import { QScrollArea, QList, QItem, QItemLabel, QItemSection, QPageSticky } from 'quasar'
 import { menus } from '../router'
 
-const extraLinks = []
+const extraLinks = [
+  { label: 'Meetup', url: 'https://www.meetup.com/pt-BR/Vue-js-Norte/' },
+  { label: 'Grupo no Whatsapp', url: 'https://chat.whatsapp.com/7gXcqLOFdYaDmO7hgeGk6I' },
+  { label: 'Grupo no Telegram', url: 'https://t.me/joinchat/KjIVwE5XY11h7evjXTwU0Az' },
+  { label: 'HacktoberFEST 2019', 'url': 'https://hacktoberfest.digitalocean.com/' }
+]
 
 export default {
   name: 'SidebarLayout',
