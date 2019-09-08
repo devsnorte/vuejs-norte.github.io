@@ -16,13 +16,21 @@
               <q-item-section>
                 <q-item-label>
                   <span>{{ menu.label }}&nbsp;</span>
-                  <q-icon name="launch" /></q-item-label>
+                  <q-icon name="launch" />
+                </q-item-label>
+                <q-item-label v-if="menu.targetDate">
+                  <timer :target="new Date(menu.targetDate)"/>
+                </q-item-label>
               </q-item-section>
             </q-item>
             <q-item v-else-if="menu.route" :key="key" clickable tag="a" :to="menu.route">
               <q-item-section>
                 <q-item-label>
-                  <span>{{ menu.label }}</span></q-item-label>
+                  <span>{{ menu.label }}</span>
+                </q-item-label>
+                <q-item-label v-if="menu.targetDate">
+                  <timer :target="new Date(menu.targetDate)"/>
+                </q-item-label>
               </q-item-section>
             </q-item>
             <q-item-label header v-else :key="key">{{ menu.label }}</q-item-label>
@@ -44,27 +52,37 @@
 <script>
 import { QScrollArea, QList, QItem, QItemLabel, QItemSection, QPageSticky } from 'quasar'
 import { menus } from '../router'
-
-const extraLinks = [
-  { label: 'Meetup', url: 'https://www.meetup.com/pt-BR/Vue-js-Norte/' },
-  { label: 'Grupo no Whatsapp', url: 'https://chat.whatsapp.com/7gXcqLOFdYaDmO7hgeGk6I' },
-  { label: 'Grupo no Telegram', url: 'https://t.me/joinchat/KjIVwE5XY11h7evjXTwU0Az' },
-  { label: 'HacktoberFEST 2019', 'url': 'https://hacktoberfest.digitalocean.com/' }
-]
+import Timer from 'components/Timer'
+import UtilsMixin from '../components/UtilsMixin.vue'
 
 export default {
   name: 'SidebarLayout',
-  components: { QScrollArea, QList, QItem, QItemLabel, QItemSection, QPageSticky },
+  components: { QScrollArea, QList, QItem, QItemLabel, QItemSection, QPageSticky, Timer },
+  mixins: [UtilsMixin],
   data () {
     return {
-      menus: [...menus, ...extraLinks],
+      extraLinks: [],
       leftDrawer: true
+    }
+  },
+  computed: {
+    menus () {
+      return [...menus, ...this.extraLinks]
     }
   },
   methods: {
     toggleDrawer () {
       this.leftDrawer = !this.leftDrawer
+    },
+    async loadLinks () {
+      const collection = await this.$firebase.firestore.collection('links')
+      const snapshot = await collection.get()
+      const data = snapshot.docs.map(doc => ({ ...doc.data(), ref: doc }))
+      this.extraLinks = data.slice(0).sort(this.sortBy('idx'))
     }
+  },
+  mounted () {
+    this.loadLinks()
   }
 }
 </script>
