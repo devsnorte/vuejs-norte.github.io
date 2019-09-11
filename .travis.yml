@@ -1,10 +1,8 @@
 language: node_js
 node_js:
   - "10"
-install:
-  - npm install -g @quasar/cli
 script:
-  - quasar build
+  - npx quasar build
 cache:
   directories:
     - "node_modules"
