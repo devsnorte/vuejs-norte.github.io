@@ -4,7 +4,12 @@ import 'moment/locale/pt-br'
 moment.locale('pt-br')
 
 export default {
-  date: () => ({ now: new Date(), clockRef: null }),
+  data () {
+    return {
+      now: new Date(),
+      clockRef: null
+    }
+  },
   mounted () {
     this.setClock()
   },
@@ -17,7 +22,7 @@ export default {
       this.clockRef = setTimeout(() => this.tick(), 1000)
     },
     timeUntil (targetDate) {
-      return moment(this.now)
+      return moment.duration(moment(this.targetDate).diff(this.now))
     }
   }
 }
