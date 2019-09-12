@@ -19,7 +19,7 @@
                   <q-icon name="launch" />
                 </q-item-label>
                 <q-item-label v-if="menu.targetDate">
-                  <timer :target="new Date(menu.targetDate)"/>
+                  <timer :target="new Date(menu.targetDate)" show-date countdown/>
                 </q-item-label>
               </q-item-section>
             </q-item>
@@ -29,7 +29,7 @@
                   <span>{{ menu.label }}</span>
                 </q-item-label>
                 <q-item-label v-if="menu.targetDate">
-                  <timer :target="new Date(menu.targetDate)"/>
+                  <timer :target="new Date(menu.targetDate)" show-date countdown/>
                 </q-item-label>
               </q-item-section>
             </q-item>
