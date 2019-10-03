@@ -17,7 +17,7 @@
         <q-icon name="launch" size="0.8em"/>
       </a>
     </p>
-    <div class="row">
+    <!-- <div class="row">
       <div class="col-xs-12 col-lg-6 q-pa-sm">
         <q-img src="https://secure.meetupstatic.com/photos/event/9/b/5/2/600_476199762.jpeg"/>
       </div>
@@ -27,15 +27,41 @@
       <div class="col-xs-12 col-lg-6 q-pa-sm">
         <q-img src="https://secure.meetupstatic.com/photos/event/9/c/b/8/600_473500120.jpeg"/>
       </div>
+    </div> -->
+    <div class="row">
+      <member-list :list="members"/>
     </div>
   </q-page>
 </template>
 
 <script>
-import { QImg } from 'quasar'
+// import { QImg } from 'quasar'
+import MemberList from 'components/Members/MemberList'
+
 export default {
   name: 'PageComunidade',
-  components: { QImg }
+  components: { MemberList },
+  data: function () {
+    return {
+      members: []
+    }
+  },
+  methods: {
+    loadMembers: async function () {
+      const uri = 'https://back-api.renatoelysiqueira.now.sh/members'
+      const membros = await fetch(uri)
+        .then(res => res.json())
+        .catch(err => {
+          console.error(`Failed to fetch members: ${err.message}`, err)
+          return []
+        })
+      console.log({ membros })
+      this.members = membros
+    }
+  },
+  mounted () {
+    this.loadMembers()
+  }
 }
 </script>
 
