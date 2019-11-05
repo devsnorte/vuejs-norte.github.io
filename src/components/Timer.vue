@@ -32,17 +32,24 @@ export default {
     target: {
       type: Date,
       required: true
-    }
+    },
+    showNegative: Boolean
   },
   computed: {
     agora () {
       return this.now
     },
     timeLeft () {
-      return moment(this.now).to(this.target)
+      const time = moment(this.now).to(this.target)
+      if (time < 0) {
+        return this.negative ? time : moment().fromNow()
+      }
+      return time
     },
     countdownTime () {
-      const diff = moment.duration(moment(this.target).diff(this.now))
+      const duration = moment(this.target).diff(this.now)
+      const diffDuration = duration < 0 ? this.negative ? duration : 0 : duration
+      const diff = moment.duration(diffDuration)
       const measures = [
         Math.floor(diff.asDays()),
         Math.floor(diff.asHours() % 24),
