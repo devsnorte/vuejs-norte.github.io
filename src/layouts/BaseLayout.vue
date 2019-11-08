@@ -99,7 +99,7 @@ export default {
     return {
       drawerOpen: false,
       menus: [
-        { label: 'Início Teste', route: '/inicio', icon: 'home' },
+        { label: 'Início', route: '/inicio', icon: 'home' },
         { label: 'Comunidade', route: '/comunidade', icon: 'home' },
         { label: 'Links', route: '/links' },
         { label: 'Github', url: 'https://github.com/vuejs-norte/vuejs-norte.github.io' }
