@@ -15,6 +15,11 @@ const routes = [
         component: () => import('pages/Comunidade.vue')
       },
       {
+        label: 'Organizacao',
+        path: 'organizacao',
+        component: () => import('pages/Organizacao.vue')
+      },
+      {
         label: 'Links',
         path: 'links',
         component: () => import('pages/Links.vue')
