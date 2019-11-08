@@ -82,7 +82,7 @@ export default {
         img: 'statics/organizacao/joao.jpg',
         nome: 'João Ferreira',
         github: 'https://github.com/lubien',
-        linkedin: ''
+        linkedin: 'https://www.linkedin.com/in/lubien/'
       }]
     }
   }

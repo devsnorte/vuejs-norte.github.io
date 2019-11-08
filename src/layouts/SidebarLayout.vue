@@ -73,7 +73,8 @@ export default {
   },
   computed: {
     menus () {
-      return [...menus, ...this.extraLinks]
+      // return [...menus, ...this.extraLinks]
+      return [...menus]
     }
   },
   methods: {
