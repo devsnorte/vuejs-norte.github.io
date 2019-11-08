@@ -1,6 +1,6 @@
 <template>
   <div class="row q-col-gutter-md">
-    <div class="col-4" v-for="(membro, index) in organizadores" :key="index">
+    <div class="col-xs-6 col-sm-4 col-md-4" v-for="(membro, index) in organizadores" :key="index">
       <q-card class="my-card">
         <q-img :src="membro.img" :ratio="1" />
         <div class="text-h6 text-center">{{ membro.nome }}</div>
