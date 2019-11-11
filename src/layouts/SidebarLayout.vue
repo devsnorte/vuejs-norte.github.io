@@ -6,11 +6,12 @@
       side="left"
       bordered
       content-class="bg-grey-2"
+      :width="300"
     >
       <!-- QScrollArea is optional -->
-      <q-scroll-area class="fit q-pa-sm">
+      <q-scroll-area style="margin-top: 120px;height: calc(100% - 120px);">
         <q-list>
-          <q-item-label header>Navegação</q-item-label>
+          <!-- <q-item-label header>Navegação</q-item-label> -->
           <template v-for="(menu, key) in menus">
             <q-item v-if="'url' in menu" :key="key" clickable tag="a" target="_blank" :href="menu.url">
               <q-item-section>
@@ -37,6 +38,11 @@
           </template>
         </q-list>
       </q-scroll-area>
+
+       <q-img class="absolute-top" src="statics/toolbar.png" style="height: 120px">
+          <div class="absolute-bottom bg-transparent">
+          </div>
+        </q-img>
     </q-drawer>
 
     <q-page-container>
@@ -67,7 +73,7 @@ export default {
   },
   computed: {
     menus () {
-      return [...menus, ...this.extraLinks]
+      return [...menus]
     }
   },
   methods: {
