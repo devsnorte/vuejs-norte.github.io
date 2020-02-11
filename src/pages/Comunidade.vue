@@ -55,10 +55,10 @@ export default {
       const membros = await fetch(uri)
         .then(res => res.json())
         .catch(err => {
+          /* eslint-disable-next-line no-console */
           console.error(`Failed to fetch members: ${err.message}`, err)
           return []
         })
-      console.log({ membros })
       this.members = membros
     }
   },
