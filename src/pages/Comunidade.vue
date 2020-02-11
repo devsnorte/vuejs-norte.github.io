@@ -157,6 +157,17 @@ export default {
         whatsapp,
         telegram
       }
+    },
+    loadMembers: async function () {
+      const uri = 'https://back-api.renatoelysiqueira.now.sh/members'
+      const membros = await fetch(uri)
+        .then(res => res.json())
+        .catch(err => {
+          /* eslint-disable-next-line no-console */
+          console.error(`Failed to fetch members: ${err.message}`, err)
+          return []
+        })
+      this.members = membros
     }
   }
 }
