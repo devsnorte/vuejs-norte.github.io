@@ -31,8 +31,8 @@ export default {
   name: "Apoio",
   data() {
     return {
-      alura: require("../img/alura.png"),
-      cdc: require("../img/cdc.png")
+      alura: require("../img/apoio/alura.png"),
+      cdc: require("../img/apoio/cdc.png")
     };
   }
 };
