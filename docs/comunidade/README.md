@@ -4,11 +4,11 @@ editLink: false
 
 # Comunidade
 
-A comunidade Vuejs Norte surgiu com a popularização do framework Vuejs. Sentimos falta de encontros sobre front-end na região, então decidimos iniciar os encontros conhecidos como "meetups" para estimular a comunidade, apresentar novas tecnologias e principalmente manter o network entre os participantes.
+A comunidade Vuejs Norte surgiu com a popularização do framework Vuejs. Sentimos falta de encontros sobre front-end na região, então decidimos iniciar os encontros conhecidos como "meetups" para estimular a comunidade, apresentar novas tecnologias e principalmente manter o network entre os participantes para aproximar todos que amam desenvolvimento e pretendem mudar a realidade da região norte.
 
 Outro objetivo foi aproximar as empresas da comunidade em geral, por isso sempre temos convidados que representam as empresas da região falando um pouco sobre sua stack de desenvolvimento, cultura e etc.
 
-Hoje possuímos um [meetup](https://www.meetup.com/pt-BR/Vue-js-Norte/), onde temos encontros para discutir sobre todo tipo de assunto.
+Possuímos um [meetup](https://www.meetup.com/pt-BR/Vue-js-Norte/), onde temos encontros para discutir sobre todo tipo de assunto. E também nossa [plataforma de discussões](https://perguntas.vuejsnorte.com.br/).
 
 [Meetup Vue.js Norte](https://www.meetup.com/pt-BR/Vue-js-Norte/)
 
