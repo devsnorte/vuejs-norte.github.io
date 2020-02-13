@@ -5,8 +5,9 @@ module.exports = {
   themeConfig: {
     yuu: {
       defaultDarkTheme: true,
-      disableThemeIgnore: false,
-      colorThemes: false
+      disableThemeIgnore: true,
+      colorThemes: [],
+      defaultColorTheme: 'green',
 		},
     logo: 'https://raw.githubusercontent.com/vuejs-norte/artworks/master/png/logo-256x256.png',
     nav: [

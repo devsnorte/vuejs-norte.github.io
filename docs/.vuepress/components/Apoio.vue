@@ -41,12 +41,8 @@ export default {
 <style>
 .apoio {
   background-color: #f3f5f7;
-  border-color: #42b983;
   padding: 1rem 1.5rem;
-  border-left-width: 0.5rem;
-  border-left-style: solid;
   margin: 1rem 0;
-  max-width: none !important;
 }
 .apoio h2 {
   display: block;
@@ -62,6 +58,7 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
+
 .apoio img {
   height: 75px;
 }
@@ -70,6 +67,7 @@ export default {
   -webkit-transition: all 0.3s cubic-bezier(0.4, 0.03, 0.515, 0.955);
   transition: all 0.4s cubic-bezier(0.4, 0.03, 0.515, 0.955);
 }
+
 .list-parceiros {
   list-style: none;
   padding: 0;
@@ -109,5 +107,17 @@ export default {
   font-weight: 900;
   -webkit-transition: 0.4s ease-in;
   transition: 0.4s ease-in;
+}
+
+@media (max-width: 425px) {
+  .apoio h2 {
+    font-size: 1.6em;
+  }
+  .apoio img {
+    height: 65px;
+  }
+  .divulga h3 {
+    font-size: 1.2em
+  }
 }
 </style>
