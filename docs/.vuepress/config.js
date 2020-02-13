@@ -1,6 +1,7 @@
 module.exports = {
   title: 'Vue.js Norte',
   description: 'Comunidade de desenvolvedores Vue.js do Norte do Brasil',
+
   theme: 'yuu',
   themeConfig: {
     yuu: {
@@ -9,6 +10,7 @@ module.exports = {
       colorThemes: [],
       defaultColorTheme: 'green',
 		},
+  themeConfig: {
     logo: 'https://raw.githubusercontent.com/vuejs-norte/artworks/master/png/logo-256x256.png',
     nav: [
       { text: 'Início', link: '/' },
