@@ -4,11 +4,11 @@
     "docs:build": "vuepress build docs"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "moment": "^2.22.2",
     "vuepress-theme-yuu": "^2.2.1"
   },
   "devDependencies": {
-    "core-js": "^2.0.0"
+    "core-js": "^2.6.11"
   }
 }
