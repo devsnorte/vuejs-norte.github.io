@@ -55,4 +55,3 @@ vuepress-theme-yuu@^2.2.1:
   integrity sha512-3E6mGo0HEmTROnLXF2Tjju+dROyfPn1D8sW+LTLGpGNfo0dxAqT/SfWUUhEm+W4T2iZmSCNoZxosUxGFD4mc0Q==
   dependencies:
     vue-click-outside "^1.0.7"
-

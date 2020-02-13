@@ -13,7 +13,6 @@ Possuímos um [meetup](https://www.meetup.com/pt-BR/Vue-js-Norte/), onde temos e
 [Meetup Vue.js Norte](https://www.meetup.com/pt-BR/Vue-js-Norte/)
 [Discourse Vue.js Norte](https://perguntas.vuejsnorte.com.br/)
 
-
 ![Hacktoberfest 2019](https://secure.meetupstatic.com/photos/event/1/e/7/b/600_485947803.jpeg)
 ![sétimo Meetup Vue Norte](https://secure.meetupstatic.com/photos/event/8/c/9/f/600_484475999.jpeg)
 ![Segundo Meetup Vue Norte](https://secure.meetupstatic.com/photos/event/9/b/6/4/600_476199780.jpeg)
