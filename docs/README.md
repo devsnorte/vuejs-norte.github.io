@@ -11,7 +11,7 @@ meta:
       content: vue.js norte home
 actionText: Comunidade →
 actionLink: /comunidade/
-footer:  Copyright © 2019 Vue.js Norte.
+footer:  Copyright © 2020 Vue.js Norte.
 ---
 
 <Apoio />

@@ -60,6 +60,7 @@ export default {
   -webkit-box-pack: center;
   justify-content: center;
   text-align: center;
+  color: #2c3e50;
 }
 .apoio img {
   height: 75px;
