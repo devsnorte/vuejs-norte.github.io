@@ -12,6 +12,7 @@ addons:
 install:
   - npm install -g vuepress
 script:
+  - npm i
   - npm run docs:build
 cache:
   directories:
