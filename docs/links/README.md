@@ -27,6 +27,7 @@ Materiais de Apoio para Desenvolvedores.
 | [Udemy - Curso Javascript Ninja](https://www.udemy.com/curso-javascript-ninja/) |Curso do Fernando Daciuk |
 | [Udemy - Vue JS 2 - The Complete Guide (incl. Vue Router & Vuex)](https://www.udemy.com/vuejs-2-the-complete-guide/) | Curso completo de Vue.js na Udemy |
 | [Vue Mastery](https://www.vuemastery.com/courses) | Cursos da introdução ao avançado(Introdução é free)   |
+| [Repositório - Programação Prática](https://github.com/ProgramacaoPratica/CursosUdemy) | Cursos Gratuitos na Udemy |
 
 ## :houses: Comunidades Locais
 
