@@ -5,6 +5,7 @@
   },
   "dependencies": {
     "axios": "^0.18.1",
+    "font-awesome": "^4.7.0",
     "moment": "^2.22.2",
     "vuepress-theme-yuu": "^2.2.1"
   },
