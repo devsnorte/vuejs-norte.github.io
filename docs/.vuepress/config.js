@@ -13,16 +13,15 @@ module.exports = {
     nav: [
       { text: 'Início', link: '/' },
       { text: 'Comunidade', link: '/comunidade/' },
-      { text: 'Links', link: '/links/' }
+      { text: 'Utilidades', link: '/utilidades/' },
+      { text: 'Links', link: '/links/' },
     ],
     sidebar: [
       ['/', 'Início'],
       ['/comunidade/', 'Comunidade'],
-      ['/links/', 'Links']
+      ['/utilidades/', 'Utilidades'],
+      ['/links/', 'Links'],
     ],
-    repo: 'vuejs-norte/vuejs-norte.github.io',
-    repoLabel: 'Github',
-    docsRepo: 'vuejs-norte/vuejs-norte.github.io',
     docsDir: 'docs',
     docsBranch: 'dev',
     editLinks: true,
