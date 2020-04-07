@@ -42,6 +42,10 @@ export default {
           url: "https://twitter.com/vuejsnorte"
         },
         {
+          company: "linkedin",
+          url: "https://www.linkedin.com/company/vuejsnorte/"
+        },
+        {
           company: "instagram",
           url: "https://instagram.com/vuejsnorte"
         },
