@@ -68,16 +68,12 @@ export default {
           url: "https://www.meetup.com/pt-BR/Vue-js-Norte/"
         },
         {
-          title: "Fórum VueJS Norte",
-          url: "https://perguntas.vuejsnorte.com.br/"
-        },
-        {
           title: "Discord VueJS Norte",
           url: "https://discord.gg/TRBVGRj"
         },
         {
           title: "Site Oficial",
-          url: "https://vuejsnorte.com.br/"
+          url: "https://vuejs-norte.github.io"
         }
       ]
     };
