@@ -69,11 +69,15 @@ export default {
         },
         {
           title: "Discord VueJS Norte",
-          url: "https://discord.gg/TRBVGRj"
+          url: "https://discord.gg/FT7RQuT"
         },
         {
           title: "Site Oficial",
-          url: "https://vuejs-norte.github.io"
+          url: "https://vuejsnorte.com.br"
+        },
+        {
+          title: "BrazilJS Conf 2021",
+          url: "https://conf.braziljs.org/"
         }
       ]
     };
