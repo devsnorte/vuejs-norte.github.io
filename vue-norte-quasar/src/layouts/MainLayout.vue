@@ -1,25 +1,63 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated>
+    <q-header elevated class="bg-white">
       <q-toolbar>
-        <q-btn
+        <!-- <q-btn
           flat
           dense
           round
+          color="primary"
           icon="menu"
           aria-label="Menu"
           @click="leftDrawerOpen = !leftDrawerOpen"
-        />
+        /> -->
 
-        <q-toolbar-title>
-          Quasar App
+        <q-toolbar-title class="text-black text-bold">
+          <q-img src="logo-60x60.png" style="height: 32px; max-width: 32px" />
+          Vue.js Norte
         </q-toolbar-title>
 
-        <div>Quasar v{{ $q.version }}</div>
+        <div class="text-black gt-xs">
+          <q-tabs
+            class="bg-white text-black"
+          >
+            <q-route-tab
+              v-for="(item, index) in essentialLinks"
+              :key="index"
+              exact
+              :to="item.route"
+              :label="item.title"
+            />
+            <!-- <q-route-tab exact to="/comunidade" label="Comunidade" />
+            <q-route-tab exact to="/utilidades" label="Utilidades" />
+            <q-route-tab exact to="/links" label="Links" /> -->
+          </q-tabs>
+        </div>
       </q-toolbar>
     </q-header>
 
-    <q-drawer
+    <q-footer class="lt-sm">
+      <q-tabs
+        align="justify"
+        dense
+        no-caps
+        indicator-color="white"
+        class="bg-white text-grey-7"
+        active-color="primary"
+      >
+        <q-route-tab
+          v-for="(tab, index) in essentialLinks"
+          :key="index"
+          dense
+          :icon="tab.icon"
+          :label="tab.title"
+          content-class="text-weight-thin"
+          :to="tab.route"
+        />
+      </q-tabs>
+    </q-footer>
+
+    <!-- <q-drawer
       v-model="leftDrawerOpen"
       show-if-above
       bordered
@@ -38,7 +76,7 @@
           v-bind="link"
         />
       </q-list>
-    </q-drawer>
+    </q-drawer> -->
 
     <q-page-container>
       <router-view />
@@ -47,56 +85,38 @@
 </template>
 
 <script>
-import EssentialLink from 'components/EssentialLink.vue'
+// import EssentialLink from 'components/EssentialLink.vue'
 
 const linksData = [
   {
-    title: 'Docs',
-    caption: 'quasar.dev',
-    icon: 'school',
-    link: 'https://quasar.dev'
+    title: 'INÍCIO',
+    icon: 'mdi-home',
+    route: '/',
+    bold: true
   },
   {
-    title: 'Github',
-    caption: 'github.com/quasarframework',
-    icon: 'code',
-    link: 'https://github.com/quasarframework'
+    title: 'COMUNIDADE',
+    icon: 'mdi-account-multiple',
+    route: '/comunidade',
+    bold: true
   },
   {
-    title: 'Discord Chat Channel',
-    caption: 'chat.quasar.dev',
-    icon: 'chat',
-    link: 'https://chat.quasar.dev'
+    title: 'UTILIDADES',
+    icon: 'mdi-bookshelf',
+    route: '/utilidades',
+    bold: true
   },
   {
-    title: 'Forum',
-    caption: 'forum.quasar.dev',
-    icon: 'record_voice_over',
-    link: 'https://forum.quasar.dev'
-  },
-  {
-    title: 'Twitter',
-    caption: '@quasarframework',
-    icon: 'rss_feed',
-    link: 'https://twitter.quasar.dev'
-  },
-  {
-    title: 'Facebook',
-    caption: '@QuasarFramework',
-    icon: 'public',
-    link: 'https://facebook.quasar.dev'
-  },
-  {
-    title: 'Quasar Awesome',
-    caption: 'Community Quasar projects',
-    icon: 'favorite',
-    link: 'https://awesome.quasar.dev'
+    title: 'LINKS',
+    icon: 'mdi-open-in-new',
+    route: '/links',
+    bold: true
   }
 ]
 
 export default {
   name: 'MainLayout',
-  components: { EssentialLink },
+  // components: { EssentialLink },
   data () {
     return {
       leftDrawerOpen: false,
